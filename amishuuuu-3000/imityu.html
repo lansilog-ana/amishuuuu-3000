@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>amishuuu</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #fff5f5;
+            color: #d32f2f;
+            padding: 20px;
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        /* Styling for the Python code block at the top */
+        .code-block {
+            background-color: #2d3748;
+            color: #a3e635; /* Nice terminal green */
+            padding: 15px;
+            border-radius: 8px;
+            font-family: Consolas, Monaco, monospace;
+            white-space: pre;
+            overflow-x: auto;
+            margin-bottom: 30px;
+            font-size: 1rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- This prints your Python code at the beginning of the page -->
+        <pre class="code-block">for i in range(1, 1001):
+    print(f"{i}. I MISS YOU, BABY")</pre>
+
+        <!-- A clean divider line -->
+        <hr style="border: 0; border-top: 1px dashed #d32f2f; margin-bottom: 30px;">
+
+        <!-- The 1,000 lines will generate here -->
+        <div id="output"></div>
+    </div>
+
+    <script>
+        const outputDiv = document.getElementById('output');
+        let text = "";
+
+        // Runs the loop to generate the lines
+        for (let i = 1; i <= 3000; i++) {
+            text += `${i}. I MISS YOU, BABY 😘<br>`;
+        }
+
+        outputDiv.innerHTML = text;
+    </script>
+</body>
+</html>
